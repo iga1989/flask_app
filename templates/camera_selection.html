@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select a Camera</title>
+</head>
+<body>
+    <h1>Select a Camera</h1>
+    <div>
+        <a href="{{ url_for('order', camera='Camera 1') }}">
+            <img src="{{ url_for('static', filename='images/camera1.jpg') }}" alt="Camera 1" style="width:200px;">
+            <p>Camera 1</p>
+        </a>
+        <a href="{{ url_for('order', camera='Camera 2') }}">
+            <img src="{{ url_for('static', filename='images/camera2.jpg') }}" alt="Camera 2" style="width:200px;">
+            <p>Camera 2</p>
+        </a>
+        <a href="{{ url_for('order', camera='Camera 3') }}">
+            <img src="{{ url_for('static', filename='images/camera3.jpg') }}" alt="Camera 3" style="width:200px;">
+            <p>Camera 3</p>
+        </a>
+    </div>
+</body>
+</html>
